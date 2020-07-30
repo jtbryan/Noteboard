@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="title">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<div id ="fakebod" class="text-center">
+    <ul>
+        <li>
+            <div class="front-card card" style="width: 18rem;">
+                <img class="card-img-top" src="https://knoxvilletn.gov/UserFiles/Servers/Server_109478/Image/Background/skyline-sunset2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="front-card card" style="width: 18rem;">
+                <img class="card-img-top" src="https://knoxvilletn.gov/UserFiles/Servers/Server_109478/Image/Background/skyline-sunset2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="front-card card" style="width: 18rem;">
+                <img class="card-img-top" src="https://knoxvilletn.gov/UserFiles/Servers/Server_109478/Image/Background/skyline-sunset2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<button id="next-but" type="button" class="btn btn-outline-primary"><a asp-page="/Notes/Index">Go</a></button>
+@section scripts{
+<script>
+    $(document).ready(function() {
+        var imageurl = "https://knoxvilletn.gov/UserFiles/Servers/Server_109478/Image/Background/skyline-sunset2.jpg"
+        $("body").css("background-image", "url(" + imageurl + ")")
+        $("body").css("background-size", "cover")
+        $("body").css("background-repeat", "no repeat")
+    })
+</script>
+}
