@@ -133,3 +133,9 @@ html, body {
 #next-but {
   vertical-align: text-bottom;
 }
+
+#notes-container {
+  margin-right: 15%;
+  margin-left: 15%;
+  text-align: center;
+}
