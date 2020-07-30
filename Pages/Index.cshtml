@@ -5,13 +5,13 @@
 }
 
 <div id="title">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome to my App</h1>
 </div>
 <div id ="fakebod" class="text-center">
     <ul>
         <li>
             <div class="front-card card" style="width: 18rem;">
-                <img class="card-img-top" src="https://knoxvilletn.gov/UserFiles/Servers/Server_109478/Image/Background/skyline-sunset2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="..." alt="unavailable">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -19,7 +19,7 @@
         </li>
         <li>
             <div class="front-card card" style="width: 18rem;">
-                <img class="card-img-top" src="https://knoxvilletn.gov/UserFiles/Servers/Server_109478/Image/Background/skyline-sunset2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="..." alt="unavailable">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -27,22 +27,23 @@
         </li>
         <li>
             <div class="front-card card" style="width: 18rem;">
-                <img class="card-img-top" src="https://knoxvilletn.gov/UserFiles/Servers/Server_109478/Image/Background/skyline-sunset2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="..." alt="unavailable">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </li>
     </ul>
+    <a class="btn btn-outline-primary" role="button" asp-page="/Notes/Index">Notes</a>
 </div>
-<button id="next-but" type="button" class="btn btn-outline-primary"><a asp-page="/Notes/Index">Go</a></button>
 @section scripts{
 <script>
     $(document).ready(function() {
-        var imageurl = "https://knoxvilletn.gov/UserFiles/Servers/Server_109478/Image/Background/skyline-sunset2.jpg"
-        $("body").css("background-image", "url(" + imageurl + ")")
-        $("body").css("background-size", "cover")
-        $("body").css("background-repeat", "no repeat")
+        $("body").css("background-color", "white")
+        $(".card-img-top[alt='unavailable'").each(function(){
+            // TODO: Come back and fix this
+            $(this).attr("src", "imgs/no-image-available.png")
+        })
     })
 </script>
 }
