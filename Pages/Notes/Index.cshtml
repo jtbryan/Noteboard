@@ -9,11 +9,11 @@
 </div>
 
 <div id="notes-container" data-toggle="modal" data-target="#exampleModalCenter">
-      @if(Model.Notes.Count() > 0)
+      @if(Model.Notes != null && Model.Notes.Count() > 0)
       {
         @foreach(var item in Model.Notes)
         {
-          <p>@Html.DisplayFor(m=>item.Title)</p>
+          <p>@Html.DisplayFor(m=>item.Title) ==> @Html.DisplayFor(m=>item.Description)</p>
         }
       }
     <button type="button" class="btn btn-success">New +</button>
@@ -34,7 +34,7 @@
             <h4>Title</h4>
             <input asp-for="Note.Title" name="title" type="text" required="true">
             <h4>Description</h4>
-            <input asp-for="Note.Description" name="desc" type="text" required="true">
+            <input asp-for="Note.Description" name="description" type="text" required="true">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
