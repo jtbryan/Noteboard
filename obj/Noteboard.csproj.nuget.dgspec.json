@@ -70,6 +70,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "toastr": {
+              "target": "Package",
+              "version": "[*, )"
             }
           },
           "imports": [

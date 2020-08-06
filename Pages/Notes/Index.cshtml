@@ -35,7 +35,7 @@
             <h4>Title</h4>
             <input asp-for="Note.Title" name="title" type="text" required="true">
             <h4>Description</h4>
-            <input asp-for="Note.Description" name="description" type="text">
+            <input asp-for="Note.Description" name="description" type="text" required="true">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -50,16 +50,29 @@
 @section scripts{
 <script>
   $(document).ready(function(){
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-top-right",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "5000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    };
     var state = '@Model.TempData["Failure"]';
     if(state == "true"){
-      bootoast.toast({
-        message: 'This is a danger toast message',
-	      type: 'danger',
-        position:'top-right',
-      });
+      toastr.error('Error saving Note');
     }
     else if(state == "false"){
-
+      toastr.success('Sucessfully saved Note');
     }
   })
 </script>

@@ -141,3 +141,7 @@ html, body {
   margin-left: 15%;
   text-align: center;
 }
+
+#toast-container > :first-child {
+  border-radius: 20px;
+}
