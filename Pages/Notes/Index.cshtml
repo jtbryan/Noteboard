@@ -5,7 +5,8 @@
 }
 
 <div id="title">
-    <h1 class="display-4">Your Notes</h1>
+    <h1 class="display-4">Note Cards</h1>
+    <p>@Model.TempData["Failure"]</p>
 </div>
 
 <div id="notes-container" data-toggle="modal" data-target="#exampleModalCenter">
@@ -34,7 +35,7 @@
             <h4>Title</h4>
             <input asp-for="Note.Title" name="title" type="text" required="true">
             <h4>Description</h4>
-            <input asp-for="Note.Description" name="description" type="text" required="true">
+            <input asp-for="Note.Description" name="description" type="text">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -45,7 +46,52 @@
   </div>
 </div>
 
+<!-- Toast -->
+<div class="success-toast" aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+  <div class="toast" style="position: absolute; top: 0; right: 0;">
+    <div class="toast-header">
+      <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+      <strong class="mr-auto">Bootstrap</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="failure-toast" aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+  <div class="toast" style="position: absolute; top: 0; right: 0;">
+    <div class="toast-header">
+      <img class="rounded mr-2" alt="...">
+      <strong class="mr-auto">Bootstrap</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+
+</div>
 @section scripts{
 <script>
+  $(document).ready(function(){
+    var state = '@Model.TempData["Failure"]';
+    if(state == "true"){
+      $('.failure-toast').fadeIn().slideUp("slow")
+      setTimeout(function(){
+        $('.failure-toast').fadeOut().slideUp("slow")
+      }, 15000)
+    }
+    else if(state == "false"){
+
+    }
+  })
 </script>
 }

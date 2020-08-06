@@ -12,7 +12,6 @@ namespace Noteboard.Pages.Notes
 {
     public class NotesIndexModel : PageModel
     {
-        private readonly ILogger<NotesIndexModel> _logger;
         private readonly ApplicationDbContext _db;
 
         public NotesIndexModel(ApplicationDbContext db)
@@ -36,13 +35,15 @@ namespace Noteboard.Pages.Notes
         {
             if(ModelState.IsValid)
             {
-               await _db.Note.AddAsync(Note);
-               await _db.SaveChangesAsync();
-               return RedirectToPage("Index");
+                await _db.Note.AddAsync(Note);
+                await _db.SaveChangesAsync();
+                TempData["Failure"] = "false";
+                return RedirectToPage("Index");;
             }
             else
             {
-                return Page();
+                TempData["Failure"] = "true";
+                return RedirectToPage("Index");;
             }
         }
     }
