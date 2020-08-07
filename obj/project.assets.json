@@ -5941,34 +5941,28 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.5",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.5",
-      "toastr >= *"
+      "toastr >= 2.1.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jonathan\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jonni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Noteboard.csproj",
+      "projectUniqueName": "C:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Noteboard.csproj",
       "projectName": "Noteboard",
-      "projectPath": "C:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Noteboard.csproj",
-      "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\obj\\",
+      "projectPath": "C:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Noteboard.csproj",
+      "packagesPath": "C:\\Users\\jonni\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\jonni\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6017,7 +6011,7 @@
           },
           "toastr": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[2.1.1, )"
           }
         },
         "imports": [
@@ -6038,7 +6032,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
