@@ -154,10 +154,17 @@ html, body {
     list-style: none;
     flex: 0 0 100%;
     padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.card-body {
+.card-body > p{
+  display: block;
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -171,6 +178,14 @@ html, body {
   height: 200px;
   border-radius: 20px;
   min-width: 180px;
+  max-width: 180px;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  #notes-list li > .card {
+    min-width: 100%;
+    width: 80%;
+  }
 }
 
 .card-body > h5 {

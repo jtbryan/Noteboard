@@ -19,23 +19,23 @@ namespace Noteboard.Pages.Notes
             _db = db;
         }
 
-        public IEnumerable<Note> Notes {get;set;}
+        public IEnumerable<Notecard> Notecards {get;set;}
 
         // Bind Property allow post to access this Note object
         [BindProperty]
-        public Note Note {get;set;}
+        public Notecard Notecard {get;set;}
 
         [HttpGet]
         public async Task OnGet()
         {
-            Notes = await _db.Note.ToListAsync();
+            Notecards = await _db.Notecard.ToListAsync();
         }
         [HttpPost]
         public async Task<IActionResult> OnPost()
         {
             if(ModelState.IsValid)
             {
-                await _db.Note.AddAsync(Note);
+                await _db.Notecard.AddAsync(Notecard);
                 await _db.SaveChangesAsync();
                 TempData["Failure"] = "false";
                 return RedirectToPage("Index");;

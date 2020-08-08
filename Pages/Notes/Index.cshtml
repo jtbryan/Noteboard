@@ -11,10 +11,10 @@
 
 <div id="notes-container">
       @{
-        if(Model.Notes != null && Model.Notes.Count() > 0)
+        if(Model.Notecards != null && Model.Notecards.Count() > 0)
         {
           <ul id="notes-list">
-          @foreach(var item in Model.Notes)
+          @foreach(var item in Model.Notecards)
           {
             <li>
             <div class="card" style="width: 18rem;">
@@ -48,9 +48,9 @@
       <form method="post">
         <div class="modal-body">
             <h4>Title</h4>
-            <input asp-for="Note.Title" name="title" type="text" required="true">
+            <input asp-for="Notecard.Title" name="title" type="text" required="true">
             <h4>Description</h4>
-            <input asp-for="Note.Description" name="description" type="text" required="true">
+            <input asp-for="Notecard.Description" name="description" type="text" required="true">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -61,15 +61,15 @@
   </div>
 </div>
 
-@if(Model.Notes != null && Model.Notes.Count() > 0)
+@if(Model.Notecards != null && Model.Notecards.Count() > 0)
 {
-  @foreach(var item in Model.Notes)
+  @foreach(var item in Model.Notecards)
   {
     <div class="modal fade" id="Notecard@{@item.Id}" tabindex="-1" role="dialog" aria-labelledby="NewNotecard" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">New Notecard</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">Edit Notecard</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -77,9 +77,9 @@
           <form method="post">
             <div class="modal-body">
               <h4>Title</h4>
-              <input asp-for="Note.Title" name="title" type="text" required="true">
+              <input asp-for="Notecard.Title" name="title" type="text" required="true">
               <h4>Description</h4>
-              <input asp-for="Note.Description" name="description" type="text" required="true">
+              <input asp-for="Notecard.Description" name="description" type="text" required="true">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -15,6 +15,8 @@ namespace Noteboard.Model
             
         }
 
+        public DbSet<Notecard> Notecard {get;set;}
+
         public DbSet<Note> Note {get;set;}
     }
 }
