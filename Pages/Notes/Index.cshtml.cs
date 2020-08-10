@@ -10,11 +10,11 @@ using Noteboard.Model;
 
 namespace Noteboard.Pages.Notes
 {
-    public class NotesIndexModel : PageModel
+    public class NotecardsIndexModel : PageModel
     {
         private readonly ApplicationDbContext _db;
 
-        public NotesIndexModel(ApplicationDbContext db)
+        public NotecardsIndexModel(ApplicationDbContext db)
         {
             _db = db;
         }

@@ -200,6 +200,6 @@ html, body {
   border-radius: 20px;
 }
 
-[id^=Note]:hover {
+.note-card:hover {
   cursor: pointer;
 }

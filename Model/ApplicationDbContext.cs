@@ -15,8 +15,8 @@ namespace Noteboard.Model
             
         }
 
-        public DbSet<Notecard> Notecard {get;set;}
+        public virtual DbSet<Notecard> Notecard {get;set;}
 
-        public DbSet<Note> Note {get;set;}
+        public virtual DbSet<Note> Note {get;set;}
     }
 }
