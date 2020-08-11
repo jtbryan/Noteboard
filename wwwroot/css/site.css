@@ -176,9 +176,11 @@ html, body {
 #notes-list li > .card {
   width: 100% !important;
   height: 200px;
-  border-radius: 20px;
+  border-radius: 30px;
   min-width: 180px;
   max-width: 180px;
+  background-color: rgb(255, 159, 0, .7);
+  box-shadow: 5px -6px 3px #ddd;
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
@@ -202,4 +204,11 @@ html, body {
 
 .note-card:hover {
   cursor: pointer;
+  background-color: rgb(255, 159, 0, .4);
+  box-shadow: 6px -4px 3px #ddd;
+  outline: none;
+}
+
+*:focus {
+  outline: none;
 }

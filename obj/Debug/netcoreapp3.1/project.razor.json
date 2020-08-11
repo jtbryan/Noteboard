@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Noteboard.csproj",
+  "FilePath": "c:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Noteboard.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,42 +20521,42 @@
   "RootNamespace": "Noteboard",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Pages\\Notes\\Index.cshtml",
-      "TargetPath": "Pages\\Notes\\Index.cshtml",
+      "FilePath": "c:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Pages\\Index.cshtml",
+      "FilePath": "c:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonni\\Desktop\\School\\repos\\Noteboard\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Pages\\Notes\\Index.cshtml",
+      "TargetPath": "Pages\\Notes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Jonathan\\Desktop\\Repos\\Noteboard\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     }
